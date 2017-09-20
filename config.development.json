@@ -1,0 +1,12 @@
+{
+    "logoutUrl": "https://www.google.com/accounts/Logout?continue=https://appengine.google.com/_ah/logout?continue=http://localhost:8080/slo",
+    "client_id": "1078413334731-m53th1ptemc3046q1rg5d7gr0p6l6obm.apps.googleusercontent.com",
+    "response_type": "token id_token",
+    "scope": "openid profile",
+    "authority": "https://accounts.google.com",
+    "automaticSilentRenew": true,
+    "filterProtocolClaims": true,
+    "loadUserInfo": true,
+    "userDataUrl": "http://localhost:9000/userdata",
+    "legacyDataUrl": "http://localhost:9000/legacydata"
+}
