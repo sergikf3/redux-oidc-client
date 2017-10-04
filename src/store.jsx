@@ -1,11 +1,11 @@
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import { browserHistory } from 'react-router';
 import { syncHistoryWithStore, routerReducer, routerMiddleware } from 'react-router-redux';
-import { createUserManager, loadUser } from 'redux-oidc';
+//import { createUserManager, loadUser } from 'redux-oidc';
 import createSagaMiddleware from 'redux-saga'
 import { rootSaga } from './sagas';
 import reducer from './reducer';
-import userManager from './utils/userManager';
+//import userManager from './utils/userManager';
 
 const sagaMiddleware = createSagaMiddleware();
 
@@ -26,7 +26,7 @@ const createStoreWithMiddleware = compose(
 const store = createStoreWithMiddleware(reducer, initialState);
 
 // load the current user into the redux store
-loadUser(store, userManager);
+//loadUser(store, userManager);
 
 sagaMiddleware.run(rootSaga);
 

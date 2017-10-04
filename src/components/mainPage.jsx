@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import userManager from '../utils/userManager';
+//import userManager from '../utils/userManager';
 import { loadUserDataStart } from '../actions';
 import UserItemInfo from './userItemInfo';
 import Table from 'react-bootstrap/lib/Table';
